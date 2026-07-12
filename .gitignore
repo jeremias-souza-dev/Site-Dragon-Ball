@@ -1,0 +1,9 @@
+/cache/*
+!/cache/index.html
+/compile/*
+/system/cache/*
+!/system/cache/index.html
+/system/logs/*.php
+!/system/logs/index.html
+Thumbs.db
+.DS_Store

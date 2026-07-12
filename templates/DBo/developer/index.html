@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR...l1-strict.dtd">
+<script language="JavaScript">
+
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+</script>
+
+<script language="javascript">
+function click() {
+if (event.button==2||event.button==3) {
+oncontextmenu='return false';
+}
+}
+document.onmousedown=click
+document.oncontextmenu = new Function("return false;")
+</script>
+
+
+<script language="JavaScript">
+function tecla() {
+if (event.keyCode==123) {
+event.keyCode=0;
+event.returnValue=false;
+}
+} 
+document.onkeydown=tecla;
+</script>
+
+<script language='JavaScript'> 
+function clique() {if (event.button==2||event.button==3) {oncontextmenu=&#39;return false&#39;;}}
+document.onmousedown=clique
+document.oncontextmenu = new Function(&quot;return false;&quot;)
+</script>
+
+<html>
+<head>
+	<title>Acesso negado *-*</title>
+</head>
+<body ondragstart="return false" oncontextmenu="return false" onkeydown="return false">
+
+<center><font color="red" size="3" face="arial black">Acesso a este diretorio é proibido.</font></center>
+<br>
+<center><font size="3" face="arial black">By: </font><font color="green" size="3" face="arial black">[ADM] Night </font><font size="3" face="arial black">xD</font></center>
+<br>
+<center><font size="2" face="arial black">Por ser mal educado seu IP será registrado...</font></center>
+<center><a href="#/hackeado.php"><img src="http://www.wieistmeineip.de/ip-address/" border="0" width="230" height="230" alt="IP"/></center></a>
+<center><br><a href="http://www.planalto.gov.br/ccivil_03/leis/l9610.htm" target="_blank"> lei número 9.610 de 19 de fevereiro de 1998</center>
+<script language="javascript" src="/PegaIP.php"></script>
+</body>
