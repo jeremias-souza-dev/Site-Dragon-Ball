@@ -383,7 +383,7 @@ class Guilds extends Controller {
 		if(!$this->guilds_model->isGuildLeader($data['guild'][0]['ownerid']) and !$this->guilds_model->isLeader($id)) $ide->redirect(WEBSITE."/index.php/guilds");
 		$data['id'] = $id;
 		
-				require("config.php");
+				require(FCPATH."config.php");
 				$cfg['upload_path'] = 'public/guild_logos';
 				$cfg['allowed_types'] = 'gif';
 				$cfg['max_size']	= '128';

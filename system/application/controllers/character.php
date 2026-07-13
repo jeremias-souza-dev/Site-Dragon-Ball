@@ -71,7 +71,7 @@ class Character extends Controller {
 		}
 	
 	function _validName($name) {
-		require("config.php");
+		require(FCPATH."config.php");
 		$name = explode(" ", $name);
 			foreach($name as $unit) {
 				if(in_array(strtolower($unit), $config['invalidNameTags'])) {

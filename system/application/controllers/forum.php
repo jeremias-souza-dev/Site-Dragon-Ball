@@ -17,7 +17,7 @@ class Forum extends Controller {
 	}
 	
 	public function board($id) {
-		require("config.php");
+		require(FCPATH."config.php");
 		$ide = new IDE;
 		$this->load->model("forum_model");
 		$data = array();
@@ -40,7 +40,7 @@ class Forum extends Controller {
 	}
 	
 	public function thread($id = null) {
-		require("config.php");
+		require(FCPATH."config.php");
 		$ide = new IDE;
 		if(empty($id)) $ide->CriticalRedirect(WEBSITE."/index.php/forum");
 		$this->load->model("forum_model");
@@ -75,7 +75,7 @@ class Forum extends Controller {
 	}
 	
 	public function _checkTimer() {
-		require("config.php");
+		require(FCPATH."config.php");
 		$time = time();
 			if(empty($_SESSION['lastPost']))
 				return true;

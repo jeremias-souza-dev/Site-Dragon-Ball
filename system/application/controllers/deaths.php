@@ -2,7 +2,7 @@
 // Controller for latestdeaths.
 class Deaths extends Controller {
 	public function index() {
-		require("config.php");
+		require(FCPATH."config.php");
 		$this->load->database();
 		if(@$_REQUEST['world'] == 0) 
 			$world = 0;

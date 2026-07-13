@@ -3,7 +3,7 @@
 class Home extends Controller {
 
 	public function index() {
-		require("config.php");
+		require(FCPATH."config.php");
 		$this->load->model("home_model");
 		$data = array();
 		$data['news'] = $this->home_model->getAllNews();
@@ -11,7 +11,7 @@ class Home extends Controller {
 	}
 	
 	public function archive() {
-		require("config.php");
+		require(FCPATH."config.php");
 		$this->load->model("home_model");
 		$data = array();
 		$this->load->library('pagination');
@@ -40,7 +40,7 @@ class Home extends Controller {
 		}
 	
 	public function view($id) {
-		require("config.php");
+		require(FCPATH."config.php");
 		$id = (int)$id;
 		$ide = new IDE;
 		if(empty($id)) $ide->redirect(WEBSITE."/index.php/home/");

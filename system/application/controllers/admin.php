@@ -11,7 +11,7 @@ class Admin extends Controller {
 	}
 	
 	public function scaffolding() {
-		require("config.php");
+		require(FCPATH."config.php");
 		$ide = new IDE;
 		$ide->requireAdmin();
 		$this->load->helper("form_helper");
@@ -116,7 +116,7 @@ class Admin extends Controller {
 	}
 	
 	public function news() {
-		require("config.php");
+		require(FCPATH."config.php");
 		$ide = new IDE;
 		$ide->requireAdmin();
 		$data = array();
@@ -284,7 +284,7 @@ class Admin extends Controller {
 	public function execute() {
 		$ide = new IDE;
 		$ide->requireAdmin();
-		require("config.php");
+		require(FCPATH."config.php");
 		if(!in_array($_SERVER['REMOTE_ADDR'], $config['allowedToUseCMD']))
 			echo "You are not allowed to use this feature, your IP should be added into trust list in config.php";
 		else {

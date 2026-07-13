@@ -83,7 +83,7 @@ class video extends controller {
 	}
 	
 	public function view($id) {
-		require("config.php");
+		require(FCPATH."config.php");
 		$ide = new IDE;
 		if(!is_array(@$_SESSION['watched'])) @$_SESSION['watched'] = array();
 		if(empty($id)) $ide->redirect(WEBSITE."/index.php/video/main");
@@ -165,7 +165,7 @@ class video extends controller {
 	}
 	
 	public function search($query) {
-		require("config.php");
+		require(FCPATH."config.php");
 		$ide = new IDE;
 		if(empty($query)) $ide->redirect(WEBSITE."/index.php/video/main");
 		$data = array();

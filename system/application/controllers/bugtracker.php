@@ -6,7 +6,7 @@ class Bugtracker extends Controller {
 	}
 	
 	public function main() {
-		require("config.php");
+		require(FCPATH."config.php");
 		$ide = new IDE;
 		$data = array();
 		$this->load->model("bugtracker_model");

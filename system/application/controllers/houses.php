@@ -8,7 +8,7 @@
 		}
 		
 		public function main($action = 0) {
-			require("config.php");
+			require(FCPATH."config.php");
 			$ide = new IDE;
 			$this->load->model("house_model");
 			$data = array();

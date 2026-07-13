@@ -10,7 +10,7 @@ $config['website'] = $config['website'] = 'http://'.$_SERVER['HTTP_HOST'] . '/'.
 $config['database']['host'] = "localhost";
 $config['database']['login'] = "root";
 $config['database']['password'] = "";
-$config['database']['database'] = "dbo";
+$config['database']['database'] = "dragonball_site";
 
 /*Name of server*/
 $config['server_name'] = "Dragon Ball War";
